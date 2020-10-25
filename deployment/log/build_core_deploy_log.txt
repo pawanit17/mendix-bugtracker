@@ -1,0 +1,9 @@
+Buildfile: C:\Users\Pavan Dittakavi\Documents\Mendix\Kanban Board-main\deployment\build_core.xml
+
+deploy:
+     [copy] Copying 33 files to C:\Users\Pavan Dittakavi\Documents\Mendix\Kanban Board-main\deployment
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+

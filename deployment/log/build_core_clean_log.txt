@@ -1,0 +1,9 @@
+Buildfile: C:\Users\Pavan Dittakavi\Documents\Mendix\Kanban Board-main\deployment\build_core.xml
+
+clean:
+   [delete] Deleting directory C:\Users\Pavan Dittakavi\Documents\Mendix\Kanban Board-main\deployment\model
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+
