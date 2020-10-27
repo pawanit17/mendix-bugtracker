@@ -21,7 +21,8 @@ public class User
 	public enum MemberNames
 	{
 		Name("Name"),
-		Email("Email");
+		Email("Email"),
+		UserID("UserID");
 
 		private java.lang.String metaName;
 
@@ -186,6 +187,42 @@ public class User
 	public final void setEmail(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String email)
 	{
 		getMendixObject().setValue(context, MemberNames.Email.toString(), email);
+	}
+
+	/**
+	 * @return value of UserID
+	 */
+	public final java.lang.String getUserID()
+	{
+		return getUserID(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of UserID
+	 */
+	public final java.lang.String getUserID(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.UserID.toString());
+	}
+
+	/**
+	 * Set value of UserID
+	 * @param userid
+	 */
+	public final void setUserID(java.lang.String userid)
+	{
+		setUserID(getContext(), userid);
+	}
+
+	/**
+	 * Set value of UserID
+	 * @param context
+	 * @param userid
+	 */
+	public final void setUserID(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String userid)
+	{
+		getMendixObject().setValue(context, MemberNames.UserID.toString(), userid);
 	}
 
 	/**
