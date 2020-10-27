@@ -9,7 +9,8 @@ public enum IssueState_Enumeration
 	In_Progress(new java.lang.String[][] { new java.lang.String[] { "en_US", "In Progress" } }),
 	Open(new java.lang.String[][] { new java.lang.String[] { "en_US", "Open" } }),
 	Closed(new java.lang.String[][] { new java.lang.String[] { "en_US", "Closed" } }),
-	Waiting(new java.lang.String[][] { new java.lang.String[] { "en_US", "Waiting" } });
+	Waiting(new java.lang.String[][] { new java.lang.String[] { "en_US", "Waiting" } }),
+	Duplicate(new java.lang.String[][] { new java.lang.String[] { "en_US", "Duplicate" } });
 
 	private java.util.Map<java.lang.String, java.lang.String> captions;
 

@@ -24,7 +24,8 @@ public class Issue
 		Description("Description"),
 		Summary("Summary"),
 		IssueID("IssueID"),
-		State("State");
+		State("State"),
+		Issue_User("MainModule.Issue_User");
 
 		private java.lang.String metaName;
 
@@ -313,6 +314,49 @@ public class Issue
 			getMendixObject().setValue(context, MemberNames.State.toString(), state.toString());
 		else
 			getMendixObject().setValue(context, MemberNames.State.toString(), null);
+	}
+
+	/**
+	 * @return value of Issue_User
+	 */
+	public final mainmodule.proxies.User getIssue_User() throws com.mendix.core.CoreException
+	{
+		return getIssue_User(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Issue_User
+	 */
+	public final mainmodule.proxies.User getIssue_User(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		mainmodule.proxies.User result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.Issue_User.toString());
+		if (identifier != null)
+			result = mainmodule.proxies.User.load(context, identifier);
+		return result;
+	}
+
+	/**
+	 * Set value of Issue_User
+	 * @param issue_user
+	 */
+	public final void setIssue_User(mainmodule.proxies.User issue_user)
+	{
+		setIssue_User(getContext(), issue_user);
+	}
+
+	/**
+	 * Set value of Issue_User
+	 * @param context
+	 * @param issue_user
+	 */
+	public final void setIssue_User(com.mendix.systemwideinterfaces.core.IContext context, mainmodule.proxies.User issue_user)
+	{
+		if (issue_user == null)
+			getMendixObject().setValue(context, MemberNames.Issue_User.toString(), null);
+		else
+			getMendixObject().setValue(context, MemberNames.Issue_User.toString(), issue_user.getMendixObject().getId());
 	}
 
 	/**
