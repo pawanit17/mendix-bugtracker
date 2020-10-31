@@ -1,7 +1,7 @@
 Buildfile: C:\Users\Pavan Dittakavi\Documents\Mendix\Kanban Board-main\deployment\build_core.xml
 
 compile:
-    [javac] Compiling 1 source file to C:\Users\Pavan Dittakavi\Documents\Mendix\Kanban Board-main\deployment\run\bin
+    [javac] Compiling 2 source files to C:\Users\Pavan Dittakavi\Documents\Mendix\Kanban Board-main\deployment\run\bin
 
 package:
       [jar] Building jar: C:\Users\Pavan Dittakavi\Documents\Mendix\Kanban Board-main\deployment\model\bundles\project.jar

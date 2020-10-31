@@ -10,7 +10,8 @@ public enum IssueState_Enumeration
 	Open(new java.lang.String[][] { new java.lang.String[] { "en_US", "Open" } }),
 	Closed(new java.lang.String[][] { new java.lang.String[] { "en_US", "Closed" } }),
 	Waiting(new java.lang.String[][] { new java.lang.String[] { "en_US", "Waiting" } }),
-	Duplicate(new java.lang.String[][] { new java.lang.String[] { "en_US", "Duplicate" } });
+	Duplicate(new java.lang.String[][] { new java.lang.String[] { "en_US", "Duplicate" } }),
+	Rejected(new java.lang.String[][] { new java.lang.String[] { "en_US", "Rejected" } });
 
 	private java.util.Map<java.lang.String, java.lang.String> captions;
 

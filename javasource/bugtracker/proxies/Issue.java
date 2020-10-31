@@ -21,8 +21,8 @@ public class Issue
 	public enum MemberNames
 	{
 		IssueType("IssueType"),
-		Description("Description"),
-		Summary("Summary"),
+		Details("Details"),
+		ShortDescription("ShortDescription"),
 		IssueID("IssueID"),
 		State("State"),
 		Issue_User_AssignedTo("BugTracker.Issue_User_AssignedTo"),
@@ -166,81 +166,81 @@ public class Issue
 	}
 
 	/**
-	 * @return value of Description
+	 * @return value of Details
 	 */
-	public final java.lang.String getDescription()
+	public final java.lang.String getDetails()
 	{
-		return getDescription(getContext());
+		return getDetails(getContext());
 	}
 
 	/**
 	 * @param context
-	 * @return value of Description
+	 * @return value of Details
 	 */
-	public final java.lang.String getDescription(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getDetails(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (java.lang.String) getMendixObject().getValue(context, MemberNames.Description.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.Details.toString());
 	}
 
 	/**
-	 * Set value of Description
-	 * @param description
+	 * Set value of Details
+	 * @param details
 	 */
-	public final void setDescription(java.lang.String description)
+	public final void setDetails(java.lang.String details)
 	{
-		setDescription(getContext(), description);
+		setDetails(getContext(), details);
 	}
 
 	/**
-	 * Set value of Description
+	 * Set value of Details
 	 * @param context
-	 * @param description
+	 * @param details
 	 */
-	public final void setDescription(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String description)
+	public final void setDetails(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String details)
 	{
-		getMendixObject().setValue(context, MemberNames.Description.toString(), description);
+		getMendixObject().setValue(context, MemberNames.Details.toString(), details);
 	}
 
 	/**
-	 * @return value of Summary
+	 * @return value of ShortDescription
 	 */
-	public final java.lang.String getSummary()
+	public final java.lang.String getShortDescription()
 	{
-		return getSummary(getContext());
+		return getShortDescription(getContext());
 	}
 
 	/**
 	 * @param context
-	 * @return value of Summary
+	 * @return value of ShortDescription
 	 */
-	public final java.lang.String getSummary(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getShortDescription(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (java.lang.String) getMendixObject().getValue(context, MemberNames.Summary.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.ShortDescription.toString());
 	}
 
 	/**
-	 * Set value of Summary
-	 * @param summary
+	 * Set value of ShortDescription
+	 * @param shortdescription
 	 */
-	public final void setSummary(java.lang.String summary)
+	public final void setShortDescription(java.lang.String shortdescription)
 	{
-		setSummary(getContext(), summary);
+		setShortDescription(getContext(), shortdescription);
 	}
 
 	/**
-	 * Set value of Summary
+	 * Set value of ShortDescription
 	 * @param context
-	 * @param summary
+	 * @param shortdescription
 	 */
-	public final void setSummary(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String summary)
+	public final void setShortDescription(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String shortdescription)
 	{
-		getMendixObject().setValue(context, MemberNames.Summary.toString(), summary);
+		getMendixObject().setValue(context, MemberNames.ShortDescription.toString(), shortdescription);
 	}
 
 	/**
 	 * @return value of IssueID
 	 */
-	public final java.lang.String getIssueID()
+	public final java.lang.Long getIssueID()
 	{
 		return getIssueID(getContext());
 	}
@@ -249,16 +249,16 @@ public class Issue
 	 * @param context
 	 * @return value of IssueID
 	 */
-	public final java.lang.String getIssueID(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.Long getIssueID(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (java.lang.String) getMendixObject().getValue(context, MemberNames.IssueID.toString());
+		return (java.lang.Long) getMendixObject().getValue(context, MemberNames.IssueID.toString());
 	}
 
 	/**
 	 * Set value of IssueID
 	 * @param issueid
 	 */
-	public final void setIssueID(java.lang.String issueid)
+	public final void setIssueID(java.lang.Long issueid)
 	{
 		setIssueID(getContext(), issueid);
 	}
@@ -268,7 +268,7 @@ public class Issue
 	 * @param context
 	 * @param issueid
 	 */
-	public final void setIssueID(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String issueid)
+	public final void setIssueID(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Long issueid)
 	{
 		getMendixObject().setValue(context, MemberNames.IssueID.toString(), issueid);
 	}
