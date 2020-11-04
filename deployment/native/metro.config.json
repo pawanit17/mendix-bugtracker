@@ -1,8 +1,8 @@
 {
   "watch": "true",
   "watchFolders": [
-    "C:/Users/Pavan Dittakavi/Documents/Mendix/Kanban Board-main/theme",
-    "C:/Users/Pavan Dittakavi/Documents/Mendix/Kanban Board-main/javascriptsource",
+    "D:/Development/Mendix/projects/mendix-bugtracker/theme",
+    "D:/Development/Mendix/projects/mendix-bugtracker/javascriptsource",
     "C:/Program Files/Mendix/8.10.2.394/modeler/tools/node/node_modules"
   ],
   "resolver": {
@@ -11,7 +11,7 @@
       "android"
     ],
     "extraNodeModules": {
-      "externalWidgets": "C:/Users/Pavan Dittakavi/Documents/Mendix/Kanban Board-main/deployment/native/externalWidgets",
+      "externalWidgets": "D:/Development/Mendix/projects/mendix-bugtracker/deployment/native/externalWidgets",
       "@babel/runtime": "C:/Program Files/Mendix/8.10.2.394/modeler/tools/node/node_modules/@babel/runtime",
       "big.js": "C:/Program Files/Mendix/8.10.2.394/modeler/tools/node/node_modules/big.js",
       "react": "C:/Program Files/Mendix/8.10.2.394/modeler/tools/node/node_modules/react",

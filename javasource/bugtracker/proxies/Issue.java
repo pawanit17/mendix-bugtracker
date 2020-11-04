@@ -21,12 +21,16 @@ public class Issue
 	public enum MemberNames
 	{
 		IssueType("IssueType"),
-		Details("Details"),
-		ShortDescription("ShortDescription"),
+		Description("Description"),
+		ShortSummary("ShortSummary"),
 		IssueID("IssueID"),
 		State("State"),
+		Priority("Priority"),
+		_IsNew("_IsNew"),
+		Comments("Comments"),
 		Issue_User_AssignedTo("BugTracker.Issue_User_AssignedTo"),
-		Issue_User_ReportedBy("BugTracker.Issue_User_ReportedBy");
+		Issue_User_ReportedBy("BugTracker.Issue_User_ReportedBy"),
+		Issue_Project("BugTracker.Issue_Project");
 
 		private java.lang.String metaName;
 
@@ -125,7 +129,7 @@ public class Issue
 	 * Set value of IssueType
 	 * @param issuetype
 	 */
-	public final bugtracker.proxies.IssueType_Enumeration getIssueType()
+	public final bugtracker.proxies.Enumeration_IssueType getIssueType()
 	{
 		return getIssueType(getContext());
 	}
@@ -134,20 +138,20 @@ public class Issue
 	 * @param context
 	 * @return value of IssueType
 	 */
-	public final bugtracker.proxies.IssueType_Enumeration getIssueType(com.mendix.systemwideinterfaces.core.IContext context)
+	public final bugtracker.proxies.Enumeration_IssueType getIssueType(com.mendix.systemwideinterfaces.core.IContext context)
 	{
 		Object obj = getMendixObject().getValue(context, MemberNames.IssueType.toString());
 		if (obj == null)
 			return null;
 
-		return bugtracker.proxies.IssueType_Enumeration.valueOf((java.lang.String) obj);
+		return bugtracker.proxies.Enumeration_IssueType.valueOf((java.lang.String) obj);
 	}
 
 	/**
 	 * Set value of IssueType
 	 * @param issuetype
 	 */
-	public final void setIssueType(bugtracker.proxies.IssueType_Enumeration issuetype)
+	public final void setIssueType(bugtracker.proxies.Enumeration_IssueType issuetype)
 	{
 		setIssueType(getContext(), issuetype);
 	}
@@ -157,7 +161,7 @@ public class Issue
 	 * @param context
 	 * @param issuetype
 	 */
-	public final void setIssueType(com.mendix.systemwideinterfaces.core.IContext context, bugtracker.proxies.IssueType_Enumeration issuetype)
+	public final void setIssueType(com.mendix.systemwideinterfaces.core.IContext context, bugtracker.proxies.Enumeration_IssueType issuetype)
 	{
 		if (issuetype != null)
 			getMendixObject().setValue(context, MemberNames.IssueType.toString(), issuetype.toString());
@@ -166,75 +170,75 @@ public class Issue
 	}
 
 	/**
-	 * @return value of Details
+	 * @return value of Description
 	 */
-	public final java.lang.String getDetails()
+	public final java.lang.String getDescription()
 	{
-		return getDetails(getContext());
+		return getDescription(getContext());
 	}
 
 	/**
 	 * @param context
-	 * @return value of Details
+	 * @return value of Description
 	 */
-	public final java.lang.String getDetails(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getDescription(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (java.lang.String) getMendixObject().getValue(context, MemberNames.Details.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.Description.toString());
 	}
 
 	/**
-	 * Set value of Details
-	 * @param details
+	 * Set value of Description
+	 * @param description
 	 */
-	public final void setDetails(java.lang.String details)
+	public final void setDescription(java.lang.String description)
 	{
-		setDetails(getContext(), details);
+		setDescription(getContext(), description);
 	}
 
 	/**
-	 * Set value of Details
+	 * Set value of Description
 	 * @param context
-	 * @param details
+	 * @param description
 	 */
-	public final void setDetails(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String details)
+	public final void setDescription(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String description)
 	{
-		getMendixObject().setValue(context, MemberNames.Details.toString(), details);
+		getMendixObject().setValue(context, MemberNames.Description.toString(), description);
 	}
 
 	/**
-	 * @return value of ShortDescription
+	 * @return value of ShortSummary
 	 */
-	public final java.lang.String getShortDescription()
+	public final java.lang.String getShortSummary()
 	{
-		return getShortDescription(getContext());
+		return getShortSummary(getContext());
 	}
 
 	/**
 	 * @param context
-	 * @return value of ShortDescription
+	 * @return value of ShortSummary
 	 */
-	public final java.lang.String getShortDescription(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getShortSummary(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (java.lang.String) getMendixObject().getValue(context, MemberNames.ShortDescription.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.ShortSummary.toString());
 	}
 
 	/**
-	 * Set value of ShortDescription
-	 * @param shortdescription
+	 * Set value of ShortSummary
+	 * @param shortsummary
 	 */
-	public final void setShortDescription(java.lang.String shortdescription)
+	public final void setShortSummary(java.lang.String shortsummary)
 	{
-		setShortDescription(getContext(), shortdescription);
+		setShortSummary(getContext(), shortsummary);
 	}
 
 	/**
-	 * Set value of ShortDescription
+	 * Set value of ShortSummary
 	 * @param context
-	 * @param shortdescription
+	 * @param shortsummary
 	 */
-	public final void setShortDescription(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String shortdescription)
+	public final void setShortSummary(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String shortsummary)
 	{
-		getMendixObject().setValue(context, MemberNames.ShortDescription.toString(), shortdescription);
+		getMendixObject().setValue(context, MemberNames.ShortSummary.toString(), shortsummary);
 	}
 
 	/**
@@ -277,7 +281,7 @@ public class Issue
 	 * Set value of State
 	 * @param state
 	 */
-	public final bugtracker.proxies.IssueState_Enumeration getState()
+	public final bugtracker.proxies.Enumeration_IssueState getState()
 	{
 		return getState(getContext());
 	}
@@ -286,20 +290,20 @@ public class Issue
 	 * @param context
 	 * @return value of State
 	 */
-	public final bugtracker.proxies.IssueState_Enumeration getState(com.mendix.systemwideinterfaces.core.IContext context)
+	public final bugtracker.proxies.Enumeration_IssueState getState(com.mendix.systemwideinterfaces.core.IContext context)
 	{
 		Object obj = getMendixObject().getValue(context, MemberNames.State.toString());
 		if (obj == null)
 			return null;
 
-		return bugtracker.proxies.IssueState_Enumeration.valueOf((java.lang.String) obj);
+		return bugtracker.proxies.Enumeration_IssueState.valueOf((java.lang.String) obj);
 	}
 
 	/**
 	 * Set value of State
 	 * @param state
 	 */
-	public final void setState(bugtracker.proxies.IssueState_Enumeration state)
+	public final void setState(bugtracker.proxies.Enumeration_IssueState state)
 	{
 		setState(getContext(), state);
 	}
@@ -309,12 +313,128 @@ public class Issue
 	 * @param context
 	 * @param state
 	 */
-	public final void setState(com.mendix.systemwideinterfaces.core.IContext context, bugtracker.proxies.IssueState_Enumeration state)
+	public final void setState(com.mendix.systemwideinterfaces.core.IContext context, bugtracker.proxies.Enumeration_IssueState state)
 	{
 		if (state != null)
 			getMendixObject().setValue(context, MemberNames.State.toString(), state.toString());
 		else
 			getMendixObject().setValue(context, MemberNames.State.toString(), null);
+	}
+
+	/**
+	 * Set value of Priority
+	 * @param priority
+	 */
+	public final bugtracker.proxies.Enumeration_IssuePriority getPriority()
+	{
+		return getPriority(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Priority
+	 */
+	public final bugtracker.proxies.Enumeration_IssuePriority getPriority(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		Object obj = getMendixObject().getValue(context, MemberNames.Priority.toString());
+		if (obj == null)
+			return null;
+
+		return bugtracker.proxies.Enumeration_IssuePriority.valueOf((java.lang.String) obj);
+	}
+
+	/**
+	 * Set value of Priority
+	 * @param priority
+	 */
+	public final void setPriority(bugtracker.proxies.Enumeration_IssuePriority priority)
+	{
+		setPriority(getContext(), priority);
+	}
+
+	/**
+	 * Set value of Priority
+	 * @param context
+	 * @param priority
+	 */
+	public final void setPriority(com.mendix.systemwideinterfaces.core.IContext context, bugtracker.proxies.Enumeration_IssuePriority priority)
+	{
+		if (priority != null)
+			getMendixObject().setValue(context, MemberNames.Priority.toString(), priority.toString());
+		else
+			getMendixObject().setValue(context, MemberNames.Priority.toString(), null);
+	}
+
+	/**
+	 * @return value of _IsNew
+	 */
+	public final java.lang.Boolean get_IsNew()
+	{
+		return get_IsNew(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of _IsNew
+	 */
+	public final java.lang.Boolean get_IsNew(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Boolean) getMendixObject().getValue(context, MemberNames._IsNew.toString());
+	}
+
+	/**
+	 * Set value of _IsNew
+	 * @param _isnew
+	 */
+	public final void set_IsNew(java.lang.Boolean _isnew)
+	{
+		set_IsNew(getContext(), _isnew);
+	}
+
+	/**
+	 * Set value of _IsNew
+	 * @param context
+	 * @param _isnew
+	 */
+	public final void set_IsNew(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Boolean _isnew)
+	{
+		getMendixObject().setValue(context, MemberNames._IsNew.toString(), _isnew);
+	}
+
+	/**
+	 * @return value of Comments
+	 */
+	public final java.lang.String getComments()
+	{
+		return getComments(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Comments
+	 */
+	public final java.lang.String getComments(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.Comments.toString());
+	}
+
+	/**
+	 * Set value of Comments
+	 * @param comments
+	 */
+	public final void setComments(java.lang.String comments)
+	{
+		setComments(getContext(), comments);
+	}
+
+	/**
+	 * Set value of Comments
+	 * @param context
+	 * @param comments
+	 */
+	public final void setComments(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String comments)
+	{
+		getMendixObject().setValue(context, MemberNames.Comments.toString(), comments);
 	}
 
 	/**
@@ -401,6 +521,49 @@ public class Issue
 			getMendixObject().setValue(context, MemberNames.Issue_User_ReportedBy.toString(), null);
 		else
 			getMendixObject().setValue(context, MemberNames.Issue_User_ReportedBy.toString(), issue_user_reportedby.getMendixObject().getId());
+	}
+
+	/**
+	 * @return value of Issue_Project
+	 */
+	public final bugtracker.proxies.Project getIssue_Project() throws com.mendix.core.CoreException
+	{
+		return getIssue_Project(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Issue_Project
+	 */
+	public final bugtracker.proxies.Project getIssue_Project(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		bugtracker.proxies.Project result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.Issue_Project.toString());
+		if (identifier != null)
+			result = bugtracker.proxies.Project.load(context, identifier);
+		return result;
+	}
+
+	/**
+	 * Set value of Issue_Project
+	 * @param issue_project
+	 */
+	public final void setIssue_Project(bugtracker.proxies.Project issue_project)
+	{
+		setIssue_Project(getContext(), issue_project);
+	}
+
+	/**
+	 * Set value of Issue_Project
+	 * @param context
+	 * @param issue_project
+	 */
+	public final void setIssue_Project(com.mendix.systemwideinterfaces.core.IContext context, bugtracker.proxies.Project issue_project)
+	{
+		if (issue_project == null)
+			getMendixObject().setValue(context, MemberNames.Issue_Project.toString(), null);
+		else
+			getMendixObject().setValue(context, MemberNames.Issue_Project.toString(), issue_project.getMendixObject().getId());
 	}
 
 	/**

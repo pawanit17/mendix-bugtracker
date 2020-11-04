@@ -1,12 +1,11 @@
-Buildfile: C:\Users\Pavan Dittakavi\Documents\Mendix\Kanban Board-main\deployment\build_core.xml
+Buildfile: D:\Development\Mendix\projects\mendix-bugtracker\deployment\build_core.xml
 
 compile:
-    [javac] Compiling 2 source files to C:\Users\Pavan Dittakavi\Documents\Mendix\Kanban Board-main\deployment\run\bin
+    [javac] Compiling 2 source files to D:\Development\Mendix\projects\mendix-bugtracker\deployment\run\bin
 
 package:
-      [jar] Building jar: C:\Users\Pavan Dittakavi\Documents\Mendix\Kanban Board-main\deployment\model\bundles\project.jar
+      [jar] Building jar: D:\Development\Mendix\projects\mendix-bugtracker\deployment\model\bundles\project.jar
 
 BUILD SUCCESSFUL
 Total time: 1 second
-
 
