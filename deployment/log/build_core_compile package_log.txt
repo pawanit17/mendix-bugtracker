@@ -1,12 +1,12 @@
 Buildfile: D:\Development\Mendix\projects\mendix-bugtracker\deployment\build_core.xml
 
 compile:
-    [javac] Compiling 4 source files to D:\Development\Mendix\projects\mendix-bugtracker\deployment\run\bin
+    [javac] Compiling 1 source file to D:\Development\Mendix\projects\mendix-bugtracker\deployment\run\bin
 
 package:
       [jar] Building jar: D:\Development\Mendix\projects\mendix-bugtracker\deployment\model\bundles\project.jar
 
 BUILD SUCCESSFUL
-Total time: 2 seconds
+Total time: 0 seconds
 
 
