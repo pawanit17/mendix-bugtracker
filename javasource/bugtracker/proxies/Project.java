@@ -274,7 +274,7 @@ public class Project
 	/**
 	 * @return value of Project_User
 	 */
-	public final java.util.List<bugtracker.proxies.User> getProject_User() throws com.mendix.core.CoreException
+	public final bugtracker.proxies.User getProject_User() throws com.mendix.core.CoreException
 	{
 		return getProject_User(getContext());
 	}
@@ -283,15 +283,12 @@ public class Project
 	 * @param context
 	 * @return value of Project_User
 	 */
-	@SuppressWarnings("unchecked")
-	public final java.util.List<bugtracker.proxies.User> getProject_User(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	public final bugtracker.proxies.User getProject_User(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
 	{
-		java.util.List<bugtracker.proxies.User> result = new java.util.ArrayList<bugtracker.proxies.User>();
-		Object valueObject = getMendixObject().getValue(context, MemberNames.Project_User.toString());
-		if (valueObject == null)
-			return result;
-		for (com.mendix.systemwideinterfaces.core.IMendixObject mendixObject : com.mendix.core.Core.retrieveIdList(context, (java.util.List<com.mendix.systemwideinterfaces.core.IMendixIdentifier>) valueObject))
-			result.add(bugtracker.proxies.User.initialize(context, mendixObject));
+		bugtracker.proxies.User result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.Project_User.toString());
+		if (identifier != null)
+			result = bugtracker.proxies.User.load(context, identifier);
 		return result;
 	}
 
@@ -299,7 +296,7 @@ public class Project
 	 * Set value of Project_User
 	 * @param project_user
 	 */
-	public final void setProject_User(java.util.List<bugtracker.proxies.User> project_user)
+	public final void setProject_User(bugtracker.proxies.User project_user)
 	{
 		setProject_User(getContext(), project_user);
 	}
@@ -309,12 +306,12 @@ public class Project
 	 * @param context
 	 * @param project_user
 	 */
-	public final void setProject_User(com.mendix.systemwideinterfaces.core.IContext context, java.util.List<bugtracker.proxies.User> project_user)
+	public final void setProject_User(com.mendix.systemwideinterfaces.core.IContext context, bugtracker.proxies.User project_user)
 	{
-		java.util.List<com.mendix.systemwideinterfaces.core.IMendixIdentifier> identifiers = new java.util.ArrayList<com.mendix.systemwideinterfaces.core.IMendixIdentifier>();
-		for (bugtracker.proxies.User proxyObject : project_user)
-			identifiers.add(proxyObject.getMendixObject().getId());
-		getMendixObject().setValue(context, MemberNames.Project_User.toString(), identifiers);
+		if (project_user == null)
+			getMendixObject().setValue(context, MemberNames.Project_User.toString(), null);
+		else
+			getMendixObject().setValue(context, MemberNames.Project_User.toString(), project_user.getMendixObject().getId());
 	}
 
 	/**
