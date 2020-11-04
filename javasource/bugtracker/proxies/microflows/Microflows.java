@@ -20,11 +20,6 @@ public class Microflows
 		params.put("Issue", _issue == null ? null : _issue.getMendixObject());
 		Core.microflowCall("BugTracker.ACT_resetIsNewOnIssueObject").withParams(params).execute(context);
 	}
-	public static boolean aCT_setIsNewOnIssueObject(IContext context)
-	{
-		Map<java.lang.String, Object> params = new HashMap<>();
-		return (java.lang.Boolean) Core.microflowCall("BugTracker.ACT_setIsNewOnIssueObject").withParams(params).execute(context);
-	}
 	public static void aCT_UpdatePriority(IContext context, bugtracker.proxies.Issue _issue)
 	{
 		Map<java.lang.String, Object> params = new HashMap<>();

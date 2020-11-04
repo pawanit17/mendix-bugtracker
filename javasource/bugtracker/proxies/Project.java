@@ -21,8 +21,8 @@ public class Project
 	public enum MemberNames
 	{
 		Name("Name"),
-		Sponsor("Sponsor"),
-		Description("Description"),
+		Overview("Overview"),
+		Department("Department"),
 		Abbreviation("Abbreviation"),
 		Project_User("BugTracker.Project_User");
 
@@ -156,75 +156,83 @@ public class Project
 	}
 
 	/**
-	 * @return value of Sponsor
+	 * @return value of Overview
 	 */
-	public final java.lang.String getSponsor()
+	public final java.lang.String getOverview()
 	{
-		return getSponsor(getContext());
+		return getOverview(getContext());
 	}
 
 	/**
 	 * @param context
-	 * @return value of Sponsor
+	 * @return value of Overview
 	 */
-	public final java.lang.String getSponsor(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getOverview(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (java.lang.String) getMendixObject().getValue(context, MemberNames.Sponsor.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.Overview.toString());
 	}
 
 	/**
-	 * Set value of Sponsor
-	 * @param sponsor
+	 * Set value of Overview
+	 * @param overview
 	 */
-	public final void setSponsor(java.lang.String sponsor)
+	public final void setOverview(java.lang.String overview)
 	{
-		setSponsor(getContext(), sponsor);
+		setOverview(getContext(), overview);
 	}
 
 	/**
-	 * Set value of Sponsor
+	 * Set value of Overview
 	 * @param context
-	 * @param sponsor
+	 * @param overview
 	 */
-	public final void setSponsor(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String sponsor)
+	public final void setOverview(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String overview)
 	{
-		getMendixObject().setValue(context, MemberNames.Sponsor.toString(), sponsor);
+		getMendixObject().setValue(context, MemberNames.Overview.toString(), overview);
 	}
 
 	/**
-	 * @return value of Description
+	 * Set value of Department
+	 * @param department
 	 */
-	public final java.lang.String getDescription()
+	public final bugtracker.proxies.Enumeration_ProjectDepartment getDepartment()
 	{
-		return getDescription(getContext());
+		return getDepartment(getContext());
 	}
 
 	/**
 	 * @param context
-	 * @return value of Description
+	 * @return value of Department
 	 */
-	public final java.lang.String getDescription(com.mendix.systemwideinterfaces.core.IContext context)
+	public final bugtracker.proxies.Enumeration_ProjectDepartment getDepartment(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (java.lang.String) getMendixObject().getValue(context, MemberNames.Description.toString());
+		Object obj = getMendixObject().getValue(context, MemberNames.Department.toString());
+		if (obj == null)
+			return null;
+
+		return bugtracker.proxies.Enumeration_ProjectDepartment.valueOf((java.lang.String) obj);
 	}
 
 	/**
-	 * Set value of Description
-	 * @param description
+	 * Set value of Department
+	 * @param department
 	 */
-	public final void setDescription(java.lang.String description)
+	public final void setDepartment(bugtracker.proxies.Enumeration_ProjectDepartment department)
 	{
-		setDescription(getContext(), description);
+		setDepartment(getContext(), department);
 	}
 
 	/**
-	 * Set value of Description
+	 * Set value of Department
 	 * @param context
-	 * @param description
+	 * @param department
 	 */
-	public final void setDescription(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String description)
+	public final void setDepartment(com.mendix.systemwideinterfaces.core.IContext context, bugtracker.proxies.Enumeration_ProjectDepartment department)
 	{
-		getMendixObject().setValue(context, MemberNames.Description.toString(), description);
+		if (department != null)
+			getMendixObject().setValue(context, MemberNames.Department.toString(), department.toString());
+		else
+			getMendixObject().setValue(context, MemberNames.Department.toString(), null);
 	}
 
 	/**
